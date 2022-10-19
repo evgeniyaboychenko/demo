@@ -640,6 +640,12 @@ input[type="text"].visually-hidden {
   margin-right: 0;
 }
 
+.user-menu__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .user-menu__count {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -831,11 +837,120 @@ input[type="text"].visually-hidden {
   grid-area: delete;
 }
 
+#messageHeader {
+  height: 20px;
+}
+
+#footer {
+  width: 376px;
+  background-color: #f2f2ef;
+  padding: 12px;
+}
+
+#message {
+  height: 76px;
+}
+
+#map {
+  height: 160px;
+  width: 376px;
+  margin: 0px 12px 18px 12px;
+  position: relative;
+}
+
+#header {
+  height: 28px;
+  width: 376px;
+  margin: 12px 10px 12px 12px;
+}
+
+#button {
+  display: inline-block;
+  font-size: 11px;
+  color: #444444;
+  text-decoration: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  padding: 0.2em 0.6em;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  background: #f5f5f5 -webkit-gradient(linear, left top, left bottom, from(#f4f4f4), to(#f1f1f1));
+  background: #f5f5f5 -o-linear-gradient(#f4f4f4, #f1f1f1);
+  background: #f5f5f5 linear-gradient(#f4f4f4, #f1f1f1);
+  -webkit-transition: all 0.218s ease 0s;
+  -o-transition: all 0.218s ease 0s;
+  transition: all 0.218s ease 0s;
+  height: 28px;
+  width: 74px;
+}
+
+#button:hover {
+  color: #181818;
+  border: 1px solid #c6c6c6;
+  background: #f7f7f7 -webkit-gradient(linear, left top, left bottom, from(#f7f7f7), to(#f1f1f1));
+  background: #f7f7f7 -o-linear-gradient(#f7f7f7, #f1f1f1);
+  background: #f7f7f7 linear-gradient(#f7f7f7, #f1f1f1);
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+#button:active {
+  color: #333333;
+  border: 1px solid #cccccc;
+  background: #eeeeee -webkit-gradient(linear, left top, left bottom, from(#eeeeee), to(#e0e0e0));
+  background: #eeeeee -o-linear-gradient(#eeeeee, #e0e0e0);
+  background: #eeeeee linear-gradient(#eeeeee, #e0e0e0);
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset;
+}
+
+.input {
+  height: 18px;
+  margin-right: 10px;
+  width: 277px;
+  padding: 4px;
+  border: 1px solid #999;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0);
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0);
+  -webkit-transition: 0.17s linear;
+  -o-transition: 0.17s linear;
+  transition: 0.17s linear;
+}
+
+.input:focus {
+  outline: none;
+  border: 1px solid #fdd734;
+  -webkit-box-shadow: 0 0 1px 1px #fdd734;
+  box-shadow: 0 0 1px 1px #fdd734;
+}
+
+.input_error,
+.input_error:focus {
+  outline: none;
+  border: 1px solid #f33;
+  -webkit-box-shadow: 0 0 1px 1px #f33;
+  box-shadow: 0 0 1px 1px #f33;
+}
+
+#notice {
+  position: absolute;
+  left: 22px;
+  margin: 0px;
+  top: 44px;
+  color: #f33;
+  display: none;
+}
+
 .links {
   border: none;
   border-radius: 0;
   background-color: rgba(255, 255, 255, 0);
   color: #9F9F9F;
+  cursor: pointer;
 }
 
 .links--underline {
@@ -851,6 +966,15 @@ input[type="text"].visually-hidden {
 .links:hover,
 .links:focus {
   color: #000000;
+}
+
+.links--black {
+  color: #000000;
+}
+
+.links--black:hover,
+.links--black:focus {
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .form-search {
